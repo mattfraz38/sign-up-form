@@ -49,7 +49,6 @@ html {
   padding: 50px 20px 50px 20px;
   background: rgb(238,174,202);
   background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,0.4108018207282913) 100%);
-
   border-radius: 6px;
 }
 
@@ -59,6 +58,7 @@ input[type=email],
 input[type=password],
 input[type=submit] {
   display: block;
+  font-size: 85%;
   width: 100%;
   padding-bottom: 7px;
 }
@@ -73,6 +73,12 @@ input[type=submit] {
   border: 0;
   border-radius: 6px;
   font-size: 70%;
+}
+
+.sign-up-form select {
+  font-size: 70%;
+  width: 100%;
+  margin-bottom: 15px;
 }
 
 /* -----------------------
@@ -91,4 +97,86 @@ input[type=submit] {
   background: rgb(2,0,36);
   background: linear-gradient(126deg, rgba(2, 0, 36, 0.5) 3%, rgba(9, 99, 121, 0.466) 56%, rgba(0, 213, 255, 0.473) 89%);
   text-transform: uppercase;
+}
+
+/* -----------------------
+        GRID ITEMS
+----------------------- */
+
+.group-name {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    "first last";
+}
+
+.first-name {
+  grid-area: first;
+  margin-right: 7px;
+}
+
+.last-name {
+  grid-area: last;
+}
+
+.birthday {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+    "month day year";
+}
+
+.group-month {
+  grid-area: month;
+  margin-right: 7px;
+}
+
+.group-day {
+  grid-area: day;
+  margin-right: 7px;
+}
+
+.group-year {
+  grid-area: year;
+}
+
+.group-gender label {
+  display: inline;
+  padding-left: 7px;
+  vertical-align: sub;
+}
+
+.group-gender {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+    "male female other";
+  margin-bottom: 15px;
+}
+
+.male {
+  grid-area: male;
+}
+
+.female {
+  grid-area: female;
+}
+
+.other {
+  grid-area: other;
+}
+
+.agreement {
+
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.agreement input {
+  margin-left: 10%;
+}
+
+.agreement label {
+  padding-left: 12px;
 }
