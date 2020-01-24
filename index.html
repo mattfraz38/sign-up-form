@@ -7,21 +7,144 @@
     <title>Document</title>
   </head>
   <body>
-    <section class="section-title">
-      <h1>Sign up</h1>
-    </section>  
-
-    <section class="section-body">
-      <div class="group-name">
-        <div class="first-name">
-          <label for="firstName">First Name</label>
-          <input id="firstName" type="text">
+    <form class="sign-up-form">
+      <section class="section-title">
+        <h1>Sign up</h1>
+        <p>It's free and easy</p>
+      </section>  
+  
+      <section class="section-name">
+        <div class="group-name">
+          <div class="first-name">
+            <label for="firstName">First Name</label>
+            <input id="firstName" type="text" placeholder="First Name">
+          </div>
+          <div class="last-name">
+            <label for="lastName">Last Name</label>
+            <input id="lastName" type="text" placeholder="Last Name">
+          </div>
         </div>
-      </div>
-    </section>
-
-    <section class="section-button">
-
-    </section>
+      </section>
+  
+      <section class="email">
+        <div class="group-email">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="Email">
+        </div>
+      </section>
+  
+      <section class="section-password">
+        <div class="group-password">
+          <div class="first-password">
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Password">
+          </div>
+          <div class="confirm-password">
+            <label for="confirm">Re-enter Password</label>
+            <input id="confirm" type="password" placeholder="Password">
+          </div>
+        </div>
+      </section>
+  
+      <section class="section-birthday">
+        <p>Birthday</p>
+        <div class="birthday">
+          <div class="group-month">
+            <select name="month" id="month">
+              <option value="month" selected>Month</option>
+              <option value="Jan">Jan</option>
+              <option value="Feb">Feb</option>
+              <option value="Mar">Mar</option>
+              <option value="Apr">Apr</option>
+              <option value="May">May</option>
+              <option value="Jun">Jun</option>
+              <option value="Jul">Jul</option>
+              <option value="Aug">Aug</option>
+              <option value="Sept">Sept</option>
+              <option value="Oct">Oct</option>
+              <option value="Nov">Nov</option>
+              <option value="Dec">Dec</option>
+            </select>
+          </div>
+          <div class="group-day">
+            <select name="day" id="day">
+              <option value="day" selected>Day</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+              <option value="31">31</option>
+            </select>
+          </div>
+          <div class="group-year">
+            <select name="year" id="year">
+              <option value="year" selected>Year</option>
+              <option value="low-80s">1980-1983</option>
+              <option value="mid-80s">1984-1986</option>
+              <option value="late-80s">1987-1989</option>
+              <option value="low-90s">1990-1993</option>
+              <option value="mid-90s">1994-1996</option>
+              <option value="late-80s">1997-1999</option>
+              <option value="low-00s">2000-2003</option>
+              <option value="mid-00s">2004-2006</option>
+              <option value="late-00s">2007-2009</option>
+              <option value="low-10s">2010-2013</option>
+              <option value="mid-10s">2014-2016</option>
+              <option value="late-10s">2017-2019</option>
+            </select>
+          </div>
+        </div>
+      </section>
+  
+      <section class="section-gender">
+        <div class="group-gender">
+          <input id="male" name="gender" value="male" type="radio">
+          <label for="male">Male</label>
+          <input id="female" name="gender" value="female" type="radio">        
+          <label for="female">Female</label>
+          <input id="other" name="gender" value="other" type="radio">
+          <label for="other">Other</label>
+        </div>
+      </section>
+  
+      <section class="section-conditions">
+        <div class="agreement">
+          <input id="terms" name="terms" value="yes" type="checkbox" required>
+          <label for="terms">I have read and agree to the <a href="#">Terms of Servide</a></label>
+        </div>
+      </section>
+  
+      <section class="section-button">
+        <div class="sign-up-btn">
+          <input type="submit" value="Sign Up">
+        </div>
+      </section>
+    </form>
   </body>
 </html>
