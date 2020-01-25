@@ -76,7 +76,14 @@ input[type=submit] {
 .sign-up-form select {
   font-size: 70%;
   width: 100%;
-  margin-bottom: 15px;
+  height: 40px;
+}
+
+.section-birthday p {
+  display: block;
+  font-size: 85%;
+  width: 100%;
+  padding-bottom: 7px;
 }
 
 /* -----------------------
@@ -121,6 +128,7 @@ input[type=submit] {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: 
     "month day year";
+  height: 40px;
 }
 
 .group-month {
@@ -149,7 +157,8 @@ input[type=submit] {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: 
     "male female other";
-  margin-bottom: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .male {
@@ -167,7 +176,7 @@ input[type=submit] {
 .agreement {
 
   display: flex;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .agreement input {
